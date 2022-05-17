@@ -1,0 +1,23 @@
+
+<h1 mat-dialog-title>Grocery information</h1>
+<div mat-dialog-content>
+   <form [formGroup]="productForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Grocery Name</mat-label>
+        <input formControlName="groceryName" matInput placeholder="Grocery Name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Image URL</mat-label>
+        <input formControlName="imgUrl" type="url"  placeholder="https://example.com"
+        pattern="https://.*" matInput>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Quantity</mat-label>
+        <input formControlName="quantity" type="number" matInput placeholder="Quantity">
+      </mat-form-field>
+   </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close (click)="onClose()">Close</button>
+    <button mat-raised-button color="primary" (click)="addProduct()">Add To List</button>
+</div>

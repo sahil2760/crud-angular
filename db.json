@@ -1,0 +1,32 @@
+{
+  "productList": [
+    {
+      "groceryName": "apple",
+      "imgUrl": "https://google.com",
+      "quantity": 9,
+      "id": 1
+    },
+    {
+      "groceryName": "pear",
+      "imgUrl": "https://google.com",
+      "quantity": 20,
+      "id": 2
+    },
+    {
+      "groceryName": "cauliflower",
+      "imgUrl": "https://google.com",
+      "quantity": 25,
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
